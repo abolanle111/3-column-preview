@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    position: relative;
+    font-size: 11px;
+    text-align: center;
+    bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+}
+.items{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.item-1{
+    background-color: hsl(31, 77%, 52%);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+.item-2{
+    background-color: hsl(184, 100%, 22%);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+.item-3{
+    background-color: hsl(179, 100%, 13%);
+    min-height: 25rem;
+    max-width: 17rem;
+    padding: 2.5rem;
+    position: relative;
+}
+.image{
+    margin-bottom: 1.5rem;
+}
+h1{
+    color:  hsl(0, 0%, 95%);
+    font-family: ;
+    font-size: 2.3rem;
+}
+p{
+    color:  hsl(0, 0%, 95%);
+    font-family: ;
+    font-size: ;
+    margin-top: 1.2rem;
+    margin-bottom: 6rem;
+}
+.item-1 .btn{
+    position: absolute;
+    background: hsl(0, 0%, 95%);
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+}
+.item-2 .btn{
+    position: absolute;
+    background: hsl(0, 0%, 95%);
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+.item-3 .btn{
+    position: absolute;
+    background: hsl(0, 0%, 95%);
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 12px 18px;
+    bottom: 0;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 950px) {
+    .items{
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+    .item-1,
+    .item-2,
+    .item-3{
+        min-width: 22rem;
+    }
+}
